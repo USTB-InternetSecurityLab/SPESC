@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/edu.ustb.sei.mde.smartcontract/src" modelPluginID="edu.ustb.sei.mde.smartcontract"
+    modelName="SmartContract" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>smartContract.ecore</foreignModel>
+  <genPackages prefix="SmartContractSpecification" basePackage="edu.ustb.sei.mde"
+      disposableProviderFactory="true" ecorePackage="smartContract.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="smartContract.ecore#//Quantifier">
+      <genEnumLiterals ecoreEnumLiteral="smartContract.ecore#//Quantifier/forAll"/>
+      <genEnumLiterals ecoreEnumLiteral="smartContract.ecore#//Quantifier/exists"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="smartContract.ecore#//RelationalOperator">
+      <genEnumLiterals ecoreEnumLiteral="smartContract.ecore#//RelationalOperator/equal"/>
+      <genEnumLiterals ecoreEnumLiteral="smartContract.ecore#//RelationalOperator/less"/>
+      <genEnumLiterals ecoreEnumLiteral="smartContract.ecore#//RelationalOperator/lessOrEqual"/>
+      <genEnumLiterals ecoreEnumLiteral="smartContract.ecore#//RelationalOperator/greater"/>
+      <genEnumLiterals ecoreEnumLiteral="smartContract.ecore#//RelationalOperator/greaterOrEqual"/>
+      <genEnumLiterals ecoreEnumLiteral="smartContract.ecore#//RelationalOperator/notEqual"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="smartContract.ecore#//TimePredicateOperator">
+      <genEnumLiterals ecoreEnumLiteral="smartContract.ecore#//TimePredicateOperator/after"/>
+      <genEnumLiterals ecoreEnumLiteral="smartContract.ecore#//TimePredicateOperator/before"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="smartContract.ecore#//PartyMemberMultiplicity">
+      <genEnumLiterals ecoreEnumLiteral="smartContract.ecore#//PartyMemberMultiplicity/all"/>
+      <genEnumLiterals ecoreEnumLiteral="smartContract.ecore#//PartyMemberMultiplicity/any"/>
+      <genEnumLiterals ecoreEnumLiteral="smartContract.ecore#//PartyMemberMultiplicity/this"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="smartContract.ecore#//TimeQueryOperator">
+      <genEnumLiterals ecoreEnumLiteral="smartContract.ecore#//TimeQueryOperator/now"/>
+      <genEnumLiterals ecoreEnumLiteral="smartContract.ecore#//TimeQueryOperator/contractStart"/>
+      <genEnumLiterals ecoreEnumLiteral="smartContract.ecore#//TimeQueryOperator/contractEnd"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="smartContract.ecore#//AdditiveOperator">
+      <genEnumLiterals ecoreEnumLiteral="smartContract.ecore#//AdditiveOperator/add"/>
+      <genEnumLiterals ecoreEnumLiteral="smartContract.ecore#//AdditiveOperator/sub"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="smartContract.ecore#//MultiplicativeOperator">
+      <genEnumLiterals ecoreEnumLiteral="smartContract.ecore#//MultiplicativeOperator/mul"/>
+      <genEnumLiterals ecoreEnumLiteral="smartContract.ecore#//MultiplicativeOperator/div"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="smartContract.ecore#//TransitiveOperator">
+      <genEnumLiterals ecoreEnumLiteral="smartContract.ecore#//TransitiveOperator/none"/>
+      <genEnumLiterals ecoreEnumLiteral="smartContract.ecore#//TransitiveOperator/transitiveEnclosure"/>
+      <genEnumLiterals ecoreEnumLiteral="smartContract.ecore#//TransitiveOperator/selfTransitiveEnclosure"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="smartContract.ecore#//TimeLineOperator">
+      <genEnumLiterals ecoreEnumLiteral="smartContract.ecore#//TimeLineOperator/forward"/>
+      <genEnumLiterals ecoreEnumLiteral="smartContract.ecore#//TimeLineOperator/backward"/>
+    </genEnums>
+    <genClasses image="false" ecoreClass="smartContract.ecore#//NamedElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartContract.ecore#//NamedElement/name"/>
+    </genClasses>
+    <genClasses ecoreClass="smartContract.ecore#//Contract">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartContract.ecore#//Contract/parties"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartContract.ecore#//Contract/terms"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartContract.ecore#//Contract/types"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartContract.ecore#//Contract/enumTypes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartContract.ecore#//Contract/assets"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="smartContract.ecore#//Party">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartContract.ecore#//Party/actions"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="smartContract.ecore#//Type"/>
+    <genClasses ecoreClass="smartContract.ecore#//PrimitiveType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartContract.ecore#//PrimitiveType/instanceType"/>
+    </genClasses>
+    <genClasses ecoreClass="smartContract.ecore#//ComplexType"/>
+    <genClasses ecoreClass="smartContract.ecore#//Asset"/>
+    <genClasses ecoreClass="smartContract.ecore#//Field">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartContract.ecore#//Field/many"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="smartContract.ecore#//TypedElement">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference smartContract.ecore#//TypedElement/type"/>
+    </genClasses>
+    <genClasses ecoreClass="smartContract.ecore#//Action">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartContract.ecore#//Action/parameters"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartContract.ecore#//Action/IsMany"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartContract.ecore#//Action/Times"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartContract.ecore#//Action/used"/>
+    </genClasses>
+    <genClasses ecoreClass="smartContract.ecore#//InternalParty"/>
+    <genClasses ecoreClass="smartContract.ecore#//SingleParty"/>
+    <genClasses ecoreClass="smartContract.ecore#//GroupParty"/>
+    <genClasses ecoreClass="smartContract.ecore#//ExternalParty"/>
+    <genClasses image="false" ecoreClass="smartContract.ecore#//Term">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartContract.ecore#//Term/condition"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartContract.ecore#//Term/action"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference smartContract.ecore#//Term/party"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartContract.ecore#//Term/transferOperations"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartContract.ecore#//Term/break"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartContract.ecore#//Term/postCondition"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartContract.ecore#//Term/auto"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartContract.ecore#//Term/breachOperations"/>
+    </genClasses>
+    <genClasses ecoreClass="smartContract.ecore#//RightTerm"/>
+    <genClasses ecoreClass="smartContract.ecore#//DutyTerm"/>
+    <genClasses ecoreClass="smartContract.ecore#//BreachTerm"/>
+    <genClasses image="false" ecoreClass="smartContract.ecore#//Expression"/>
+    <genClasses image="false" ecoreClass="smartContract.ecore#//CollectionSourceExpression"/>
+    <genClasses ecoreClass="smartContract.ecore#//DescriptiveExpression">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartContract.ecore#//DescriptiveExpression/plainText"/>
+    </genClasses>
+    <genClasses ecoreClass="smartContract.ecore#//QuantifierExpression">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartContract.ecore#//QuantifierExpression/scope"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartContract.ecore#//QuantifierExpression/condition"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartContract.ecore#//QuantifierExpression/iterator"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartContract.ecore#//QuantifierExpression/qunatifier"/>
+    </genClasses>
+    <genClasses ecoreClass="smartContract.ecore#//IteratorDeclExpression">
+      <genOperations ecoreOperation="smartContract.ecore#//IteratorDeclExpression/getType"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="smartContract.ecore#//CollectionExpression">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartContract.ecore#//CollectionExpression/source"/>
+    </genClasses>
+    <genClasses ecoreClass="smartContract.ecore#//SelectExpression">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartContract.ecore#//SelectExpression/condition"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="smartContract.ecore#//LogicalExpression"/>
+    <genClasses ecoreClass="smartContract.ecore#//ConditionalExpression">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartContract.ecore#//ConditionalExpression/condition"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartContract.ecore#//ConditionalExpression/thenBranch"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartContract.ecore#//ConditionalExpression/elseBranch"/>
+    </genClasses>
+    <genClasses ecoreClass="smartContract.ecore#//ImplyExpression">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartContract.ecore#//ImplyExpression/condition"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartContract.ecore#//ImplyExpression/implied"/>
+    </genClasses>
+    <genClasses ecoreClass="smartContract.ecore#//AndExpression">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartContract.ecore#//AndExpression/left"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartContract.ecore#//AndExpression/right"/>
+    </genClasses>
+    <genClasses ecoreClass="smartContract.ecore#//OrExpression">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartContract.ecore#//OrExpression/left"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartContract.ecore#//OrExpression/right"/>
+    </genClasses>
+    <genClasses ecoreClass="smartContract.ecore#//NotExpression">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartContract.ecore#//NotExpression/inner"/>
+    </genClasses>
+    <genClasses ecoreClass="smartContract.ecore#//RelationalExpression">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartContract.ecore#//RelationalExpression/left"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartContract.ecore#//RelationalExpression/right"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartContract.ecore#//RelationalExpression/operator"/>
+    </genClasses>
+    <genClasses ecoreClass="smartContract.ecore#//TimePredicate">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartContract.ecore#//TimePredicate/base"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartContract.ecore#//TimePredicate/operator"/>
+    </genClasses>
+    <genClasses ecoreClass="smartContract.ecore#//BoundedTimePredicate">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartContract.ecore#//BoundedTimePredicate/bound"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartContract.ecore#//BoundedTimePredicate/closed"/>
+    </genClasses>
+    <genClasses ecoreClass="smartContract.ecore#//PeriodicTimePredicate">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartContract.ecore#//PeriodicTimePredicate/period"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartContract.ecore#//PeriodicTimePredicate/basefrom"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartContract.ecore#//PeriodicTimePredicate/baseto"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartContract.ecore#//PeriodicTimePredicate/periodDate"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="smartContract.ecore#//TimeExpression"/>
+    <genClasses ecoreClass="smartContract.ecore#//TimeConstant">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartContract.ecore#//TimeConstant/year"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartContract.ecore#//TimeConstant/month"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartContract.ecore#//TimeConstant/day"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartContract.ecore#//TimeConstant/hour"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartContract.ecore#//TimeConstant/min"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartContract.ecore#//TimeConstant/sec"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartContract.ecore#//TimeConstant/date"/>
+    </genClasses>
+    <genClasses ecoreClass="smartContract.ecore#//TimeVarExpression"/>
+    <genClasses ecoreClass="smartContract.ecore#//ActionEnforcedTimeQuery">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference smartContract.ecore#//ActionEnforcedTimeQuery/action"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference smartContract.ecore#//ActionEnforcedTimeQuery/party"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartContract.ecore#//ActionEnforcedTimeQuery/multiplicity"/>
+    </genClasses>
+    <genClasses ecoreClass="smartContract.ecore#//TermValidTimeQuery">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference smartContract.ecore#//TermValidTimeQuery/term"/>
+    </genClasses>
+    <genClasses ecoreClass="smartContract.ecore#//GlobalTimeQuery">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartContract.ecore#//GlobalTimeQuery/operator"/>
+    </genClasses>
+    <genClasses ecoreClass="smartContract.ecore#//TimeQuery"/>
+    <genClasses image="false" ecoreClass="smartContract.ecore#//ArithmeticExpression">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartContract.ecore#//ArithmeticExpression/left"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartContract.ecore#//ArithmeticExpression/right"/>
+    </genClasses>
+    <genClasses ecoreClass="smartContract.ecore#//AdditiveExpression">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartContract.ecore#//AdditiveExpression/operator"/>
+    </genClasses>
+    <genClasses ecoreClass="smartContract.ecore#//MultiplicativeExpression">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartContract.ecore#//MultiplicativeExpression/operator"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="smartContract.ecore#//ConstantExpression"/>
+    <genClasses ecoreClass="smartContract.ecore#//FloatConstant">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartContract.ecore#//FloatConstant/value"/>
+    </genClasses>
+    <genClasses ecoreClass="smartContract.ecore#//StringConstant">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartContract.ecore#//StringConstant/value"/>
+    </genClasses>
+    <genClasses ecoreClass="smartContract.ecore#//IntegerConstant">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartContract.ecore#//IntegerConstant/value"/>
+    </genClasses>
+    <genClasses ecoreClass="smartContract.ecore#//Valueconstant">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartContract.ecore#//Valueconstant/value"/>
+    </genClasses>
+    <genClasses ecoreClass="smartContract.ecore#//Booleanconstant">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartContract.ecore#//Booleanconstant/value"/>
+    </genClasses>
+    <genClasses ecoreClass="smartContract.ecore#//TypeLib">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartContract.ecore#//TypeLib/types"/>
+    </genClasses>
+    <genClasses ecoreClass="smartContract.ecore#//SlotRef">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference smartContract.ecore#//SlotRef/slot"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartContract.ecore#//SlotRef/next"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartContract.ecore#//SlotRef/transitive"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="smartContract.ecore#//DataSlot"/>
+    <genClasses image="false" ecoreClass="smartContract.ecore#//TransferOperation">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartContract.ecore#//TransferOperation/money"/>
+    </genClasses>
+    <genClasses ecoreClass="smartContract.ecore#//Deposit"/>
+    <genClasses ecoreClass="smartContract.ecore#//Withdraw"/>
+    <genClasses ecoreClass="smartContract.ecore#//Transfer">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartContract.ecore#//Transfer/account"/>
+    </genClasses>
+    <genClasses ecoreClass="smartContract.ecore#//ThisExpression"/>
+    <genClasses image="false" ecoreClass="smartContract.ecore#//FieldContainer">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartContract.ecore#//FieldContainer/fields"/>
+    </genClasses>
+    <genClasses ecoreClass="smartContract.ecore#//TimeLine">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartContract.ecore#//TimeLine/base"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartContract.ecore#//TimeLine/deviation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartContract.ecore#//TimeLine/operator"/>
+    </genClasses>
+    <genClasses ecoreClass="smartContract.ecore#//enumType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartContract.ecore#//enumType/selections"/>
+    </genClasses>
+    <genClasses ecoreClass="smartContract.ecore#//Selection"/>
+    <genClasses ecoreClass="smartContract.ecore#//MoneyExpression">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartContract.ecore#//MoneyExpression/relationOperator"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartContract.ecore#//MoneyExpression/condition"/>
+    </genClasses>
+    <genClasses ecoreClass="smartContract.ecore#//RightExpression">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartContract.ecore#//RightExpression/RightType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartContract.ecore#//RightExpression/RightProporty"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

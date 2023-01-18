@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExportRepresentationsAsImagesDialog">
+		<item value="JPG" key="ExportRepresentationsAsImagesDialog.imageFormat"/>
+		<list key="ExportRepresentationsAsImagesDialog.file">
+			<item value="C:\Users\18810\Pictures"/>
+			<item value="C:\Users\18810\Pictures\asset class diagram.jpg"/>
+		</list>
+	</section>
+</section>

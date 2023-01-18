@@ -1,0 +1,30 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: edu.ustb.sei.mde.smartcontract.scs
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: edu.ustb.sei.mde.smartcontract.scs; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: edu.ustb.sei.mde.smartcontract,
+ org.eclipse.xtext,
+ org.eclipse.xtext.xbase,
+ org.eclipse.equinox.common;bundle-version="3.5.0",
+ org.eclipse.xtext.xbase.lib;bundle-version="2.14.0",
+ org.antlr.runtime;bundle-version="[3.2.0,3.2.1)",
+ org.eclipse.xtext.util,
+ org.eclipse.xtext.generator;resolution:=optional,
+ org.eclipse.xtend.lib;bundle-version="2.14.0",
+ edu.ustb.sei.mde.smartcontract.design;bundle-version="1.0.0",
+ edu.ustb.sei.mde.smartcontract.edit;bundle-version="1.0.0",
+ edu.ustb.sei.mde.smartcontract.editor;bundle-version="1.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: edu.ustb.sei.mde.validation,
+ edu.ustb.sei.mde,
+ edu.ustb.sei.mde.services,
+ edu.ustb.sei.mde.parser.antlr.internal,
+ edu.ustb.sei.mde.formatting2,
+ edu.ustb.sei.mde.serializer,
+ edu.ustb.sei.mde.scoping,
+ edu.ustb.sei.mde.generator,
+ edu.ustb.sei.mde.parser.antlr
+Import-Package: org.apache.log4j

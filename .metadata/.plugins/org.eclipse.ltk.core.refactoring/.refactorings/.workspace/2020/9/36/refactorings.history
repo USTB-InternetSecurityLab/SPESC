@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 8 resources" deleteContents="false" description="Delete 8 resources" element1="/edu.ustb.sei.mde.smartcontract" element2="/edu.ustb.sei.mde.smartcontract.design" element3="/edu.ustb.sei.mde.smartcontract.edit" element4="/edu.ustb.sei.mde.smartcontract.editor" element5="/edu.ustb.sei.mde.smartcontract.scs" element6="/edu.ustb.sei.mde.smartcontract.scs.ide" element7="/edu.ustb.sei.mde.smartcontract.scs.ui" element8="/edu.ustb.sei.mde.smartcontract.tests" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="8" stamp="1599206692439"/>
+</session>

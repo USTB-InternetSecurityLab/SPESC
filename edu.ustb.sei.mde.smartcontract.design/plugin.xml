@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+  <extension point="org.eclipse.sirius.componentization">
+    <component class="edu.ustb.sei.mde.smartcontract.design.Activator"
+               id="edu.ustb.sei.mde.smartcontract.design"
+	       name="smartcontract">
+    </component>
+  </extension>
+  <extension
+        point="org.eclipse.sirius.diagram.ui.viewOrderingProvider">
+     <viewOrderingProvider
+           providerClass="edu.ustb.sei.mde.smartcontract.design.SmartContractViewOrderingProvider">
+     </viewOrderingProvider>
+  </extension>
+  <extension
+        point="org.eclipse.sirius.diagram.ui.layoutProvider">
+     <layoutProvider
+           priority="high"
+           providerClass="edu.ustb.sei.mde.smartcontract.design.SmartContractLayoutProvider">
+     </layoutProvider>
+  </extension>
+</plugin>

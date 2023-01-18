@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="smartcontract" version="12.0.0.2017041100">
+  <ownedViewpoints name="Contracts" modelFileExtension="scs">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Contract diagram" domainClass="smartContractSpecification::Contract">
+      <metamodel href="../../edu.ustb.sei.mde.smartcontract/model/smartContract.ecore#/"/>
+      <defaultLayer name="Default"/>
+      <additionalLayers name="SingleParty" activeByDefault="true">
+        <nodeMappings name="SinglePartyNode" semanticCandidatesExpression="feature:parties" domainClass="smartContractSpecification::SingleParty">
+          <style xsi:type="style:WorkspaceImageDescription" sizeComputationExpression="6" resizeKind="NSEW" arcWidth="1" arcHeight="1" workspacePath="/edu.ustb.sei.mde.smartcontract.design/icons/SingleParty.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <toolSections name="Tools">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="SingleParty" nodeMappings="//@ownedViewpoints[name='Contracts']/@ownedRepresentations[name='Contract%20diagram']/@additionalLayers[name='SingleParty']/@nodeMappings[name='SinglePartyNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="smartContractSpecification::SingleParty" referenceName="parties">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'PartyName'"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </additionalLayers>
+      <additionalLayers name="GroupParty" activeByDefault="true">
+        <nodeMappings name="GroupPartyNode" semanticCandidatesExpression="feature:parties" domainClass="smartContractSpecification::GroupParty">
+          <style xsi:type="style:WorkspaceImageDescription" sizeComputationExpression="9" resizeKind="NSEW" arcWidth="1" arcHeight="1" workspacePath="/edu.ustb.sei.mde.smartcontract.design/icons/GroupParty.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <toolSections name="Tools">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="GroupParty" nodeMappings="//@ownedViewpoints[name='Contracts']/@ownedRepresentations[name='Contract%20diagram']/@additionalLayers[name='GroupParty']/@nodeMappings[name='GroupPartyNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="smartContractSpecification::GroupParty" referenceName="parties">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'PartyName'"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </additionalLayers>
+      <additionalLayers name="Term" activeByDefault="true">
+        <containerMappings name="RightTermNode" domainClass="smartContractSpecification::RightTerm">
+          <subNodeMappings name="ActionNode" semanticCandidatesExpression="feature:action" domainClass="smartContractSpecification::Action">
+            <style xsi:type="style:SquareDescription" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            </style>
+          </subNodeMappings>
+          <subNodeMappings name="DepositNode" semanticCandidatesExpression="feature:eAllContents" domainClass="smartContractSpecification::Deposit">
+            <conditionnalStyles predicateExpression="aql:container.party.oclIsKindOf(smartContractSpecification::SingleParty)">
+              <style xsi:type="style:WorkspaceImageDescription" labelExpression="service:compileDeal()" sizeComputationExpression="6" resizeKind="NSEW" arcWidth="1" arcHeight="1" workspacePath="/edu.ustb.sei.mde.smartcontract.design/icons/SingleDeposit.png">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="aql:container.party.oclIsKindOf(smartContractSpecification::GroupParty)">
+              <style xsi:type="style:WorkspaceImageDescription" labelExpression="service:compileDeal()" sizeComputationExpression="9" resizeKind="NSEW" arcWidth="1" arcHeight="1" workspacePath="/edu.ustb.sei.mde.smartcontract.design/icons/GroupDeposit.png">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </conditionnalStyles>
+          </subNodeMappings>
+          <subNodeMappings name="WithdrawNode" semanticCandidatesExpression="feature:eAllContents" domainClass="smartContractSpecification::Withdraw">
+            <conditionnalStyles predicateExpression="aql:container.party.oclIsKindOf(smartContractSpecification::SingleParty)">
+              <style xsi:type="style:WorkspaceImageDescription" labelExpression="service:compileDeal()" sizeComputationExpression="6" resizeKind="NSEW" arcWidth="1" arcHeight="1" workspacePath="/edu.ustb.sei.mde.smartcontract.design/icons/SingleTransfer.png">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="aql:container.party.oclIsKindOf(smartContractSpecification::GroupParty)">
+              <style xsi:type="style:WorkspaceImageDescription" labelExpression="service:compileDeal()" sizeComputationExpression="9" resizeKind="NSEW" arcWidth="1" arcHeight="1" workspacePath="/edu.ustb.sei.mde.smartcontract.design/icons/GroupTransfer.png">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </conditionnalStyles>
+          </subNodeMappings>
+          <subNodeMappings name="TransferNode" semanticCandidatesExpression="feature:eAllContents" domainClass="smartContractSpecification::Transfer">
+            <conditionnalStyles predicateExpression="aql:self.account.oclIsKindOf(smartContractSpecification::SingleParty)">
+              <style xsi:type="style:WorkspaceImageDescription" labelExpression="service:compileDeal()" sizeComputationExpression="6" resizeKind="NSEW" arcWidth="1" arcHeight="1" workspacePath="/edu.ustb.sei.mde.smartcontract.design/icons/SingleTransfer.png">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="aql:self.account.oclIsKindOf(smartContractSpecification::GroupParty)">
+              <style xsi:type="style:WorkspaceImageDescription" labelExpression="service:compileDeal()" sizeComputationExpression="9" resizeKind="NSEW" arcWidth="1" arcHeight="1" workspacePath="/edu.ustb.sei.mde.smartcontract.design/icons/GroupTransfer.png">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="aql:not self.account.oclIsKindOf(smartContractSpecification::SingleParty) and not self.account.oclIsKindOf(smartContractSpecification::GroupParty)">
+              <style xsi:type="style:WorkspaceImageDescription" labelExpression="service:compileDeal()" sizeComputationExpression="6" resizeKind="NSEW" arcWidth="1" arcHeight="1" workspacePath="/edu.ustb.sei.mde.smartcontract.design/icons/GroupTransfer.png">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </conditionnalStyles>
+          </subNodeMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='yellow']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_yellow']"/>
+          </style>
+        </containerMappings>
+        <containerMappings name="DutyTermNode" domainClass="smartContractSpecification::DutyTerm">
+          <subNodeMappings name="ActionNode" semanticCandidatesExpression="feature:action" domainClass="smartContractSpecification::Action">
+            <style xsi:type="style:SquareDescription" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            </style>
+          </subNodeMappings>
+          <subNodeMappings name="DepositNode" semanticCandidatesExpression="feature:eAllContents" domainClass="smartContractSpecification::Deposit">
+            <conditionnalStyles predicateExpression="aql:container.party.oclIsKindOf(smartContractSpecification::SingleParty)">
+              <style xsi:type="style:WorkspaceImageDescription" labelExpression="service:compileDeal()" sizeComputationExpression="6" resizeKind="NSEW" arcWidth="1" arcHeight="1" workspacePath="/edu.ustb.sei.mde.smartcontract.design/icons/SingleDeposit.png">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="aql:container.party.oclIsKindOf(smartContractSpecification::GroupParty)">
+              <style xsi:type="style:WorkspaceImageDescription" labelExpression="service:compileDeal()" sizeComputationExpression="9" resizeKind="NSEW" arcWidth="1" arcHeight="1" workspacePath="/edu.ustb.sei.mde.smartcontract.design/icons/GroupDeposit.png">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </conditionnalStyles>
+          </subNodeMappings>
+          <subNodeMappings name="WithdrawNode" semanticCandidatesExpression="feature:eAllContents" domainClass="smartContractSpecification::Withdraw">
+            <conditionnalStyles predicateExpression="aql:container.party.oclIsKindOf(smartContractSpecification::SingleParty)">
+              <style xsi:type="style:WorkspaceImageDescription" labelExpression="service:compileDeal()" sizeComputationExpression="6" resizeKind="NSEW" arcWidth="1" arcHeight="1" workspacePath="/edu.ustb.sei.mde.smartcontract.design/icons/SingleTransfer.png">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="aql:container.party.oclIsKindOf(smartContractSpecification::GroupParty)">
+              <style xsi:type="style:WorkspaceImageDescription" labelExpression="service:compileDeal()" sizeComputationExpression="9" resizeKind="NSEW" arcWidth="1" arcHeight="1" workspacePath="/edu.ustb.sei.mde.smartcontract.design/icons/GroupTransfer.png">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </conditionnalStyles>
+          </subNodeMappings>
+          <subNodeMappings name="TransferNode" semanticCandidatesExpression="feature:eAllContents" domainClass="smartContractSpecification::Transfer">
+            <conditionnalStyles predicateExpression="aql:self.account.oclIsKindOf(smartContractSpecification::SingleParty)">
+              <style xsi:type="style:WorkspaceImageDescription" labelExpression="service:compileDeal()" sizeComputationExpression="6" resizeKind="NSEW" arcWidth="1" arcHeight="1" workspacePath="/edu.ustb.sei.mde.smartcontract.design/icons/SingleTransfer.png">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="aql:self.account.oclIsKindOf(smartContractSpecification::GroupParty)">
+              <style xsi:type="style:WorkspaceImageDescription" labelExpression="service:compileDeal()" sizeComputationExpression="9" resizeKind="NSEW" arcWidth="1" arcHeight="1" workspacePath="/edu.ustb.sei.mde.smartcontract.design/icons/GroupTransfer.png">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </conditionnalStyles>
+            <conditionnalStyles predicateExpression="aql:not self.account.oclIsKindOf(smartContractSpecification::SingleParty) and not self.account.oclIsKindOf(smartContractSpecification::GroupParty)">
+              <style xsi:type="style:WorkspaceImageDescription" labelExpression="service:compileDeal()" sizeComputationExpression="6" resizeKind="NSEW" arcWidth="1" arcHeight="1" workspacePath="/edu.ustb.sei.mde.smartcontract.design/icons/GroupTransfer.png">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </conditionnalStyles>
+          </subNodeMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='yellow']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_yellow']"/>
+          </style>
+        </containerMappings>
+        <toolSections name="Tools">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="RightTerm" containerMappings="//@ownedViewpoints[name='Contracts']/@ownedRepresentations[name='Contract%20diagram']/@additionalLayers[name='Term']/@containerMappings[name='RightTermNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="smartContractSpecification::RightTerm" referenceName="terms">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'TermName'"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="DutyTerm" containerMappings="//@ownedViewpoints[name='Contracts']/@ownedRepresentations[name='Contract%20diagram']/@additionalLayers[name='Term']/@containerMappings[name='DutyTermNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="smartContractSpecification::DutyTerm" referenceName="terms">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'TermName'"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Action" nodeMappings="//@ownedViewpoints[name='Contracts']/@ownedRepresentations[name='Contract%20diagram']/@additionalLayers[name='Term']/@containerMappings[name='RightTermNode']/@subNodeMappings[name='ActionNode'] //@ownedViewpoints[name='Contracts']/@ownedRepresentations[name='Contract%20diagram']/@additionalLayers[name='Term']/@containerMappings[name='DutyTermNode']/@subNodeMappings[name='ActionNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="feature:party">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="smartContractSpecification::Action" referenceName="actions">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'ActionName'"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="IsMany" valueExpression="false"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="Times" valueExpression="0"/>
+                  <subModelOperations xsi:type="tool_1:Let" valueExpression="var:self"/>
+                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="action" valueExpression="var:instance"/>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </additionalLayers>
+      <additionalLayers name="TermOwner" activeByDefault="true">
+        <edgeMappings name="TermOwnerEdge" sourceMapping="//@ownedViewpoints[name='Contracts']/@ownedRepresentations[name='Contract%20diagram']/@additionalLayers[name='Term']/@containerMappings[name='RightTermNode'] //@ownedViewpoints[name='Contracts']/@ownedRepresentations[name='Contract%20diagram']/@additionalLayers[name='Term']/@containerMappings[name='DutyTermNode']" targetMapping="//@ownedViewpoints[name='Contracts']/@ownedRepresentations[name='Contract%20diagram']/@additionalLayers[name='SingleParty']/@nodeMappings[name='SinglePartyNode'] //@ownedViewpoints[name='Contracts']/@ownedRepresentations[name='Contract%20diagram']/@additionalLayers[name='GroupParty']/@nodeMappings[name='GroupPartyNode']" targetFinderExpression="feature:party">
+          <style sizeComputationExpression="4">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <toolSections name="Tools">
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="TermOwner" edgeMappings="//@ownedViewpoints[name='Contracts']/@ownedRepresentations[name='Contract%20diagram']/@additionalLayers[name='TermOwner']/@edgeMappings[name='TermOwnerEdge']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:source">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="party" valueExpression="var:target"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </additionalLayers>
+    </ownedRepresentations>
+    <ownedJavaExtensions qualifiedClassName="edu.ustb.sei.mde.smartcontract.design.Services"/>
+  </ownedViewpoints>
+</description:Group>

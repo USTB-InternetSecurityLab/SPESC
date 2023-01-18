@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: fr.obeo.dsl.designer;singleton:=true
+Archiver-Version: Plexus Archiver
+Built-By: integration
+Require-Bundle: org.eclipse.ui,org.eclipse.ui.intro,org.eclipse.help,o
+ rg.eclipse.core.runtime;bundle-version="3.8.0"
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Eclipse-SourceReferences: scm:git:https://gerrit.obeo.fr:8443/p/obeo/d
+ esigner/designer.git;path="plugins/fr.obeo.dsl.designer";commitId=cac
+ dc42779a5a22a61ee84224a05a37e4f48cf7d
+Bundle-Vendor: %providerName
+Bundle-Name: %pluginName
+Bundle-Version: 10.1.2.201803231101
+Bundle-Localization: plugin
+Created-By: Apache Maven 3.2.2
+Build-Jdk: 1.8.0_66
+

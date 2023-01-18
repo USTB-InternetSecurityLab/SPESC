@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_sfRmMNEWEei35vg19E9tlg">
+  <imports href="../../../../../../model/smartContract.ecore#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_FpZB8NUMEeilyZJ8bjCcOw" name="StartBidding">
+    <lhs xmi:id="_FqktsNUMEeilyZJ8bjCcOw" name="Lhs">
+      <nodes xmi:id="_7WI0ANUMEeilyZJ8bjCcOw">
+        <type href="../../../../../../model/smartContract.ecore#//SingleParty"/>
+        <attributes xmi:id="_RyCZUNUNEeilyZJ8bjCcOw" value="&quot;goodsOwner&quot;">
+          <type href="../../../../../../model/smartContract.ecore#//NamedElement/name"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_dAGNMNUNEeilyZJ8bjCcOw">
+        <type href="../../../../../../model/smartContract.ecore#//Field"/>
+        <attributes xmi:id="_foSXcNUNEeilyZJ8bjCcOw" value="&quot;highestPrice&quot;">
+          <type href="../../../../../../model/smartContract.ecore#//NamedElement/name"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_d4U1sNUNEeilyZJ8bjCcOw">
+        <type href="../../../../../../model/smartContract.ecore#//Field"/>
+        <attributes xmi:id="_2nUfANUNEeilyZJ8bjCcOw" value="&quot;BiddingStopTime&quot;">
+          <type href="../../../../../../model/smartContract.ecore#//NamedElement/name"/>
+        </attributes>
+      </nodes>
+    </lhs>
+    <rhs xmi:id="_FqktsdUMEeilyZJ8bjCcOw" name="Rhs">
+      <nodes xmi:id="_7WI0AdUMEeilyZJ8bjCcOw">
+        <type href="../../../../../../model/smartContract.ecore#//SingleParty"/>
+        <attributes xmi:id="_RyCZUdUNEeilyZJ8bjCcOw" value="&quot;goodsOwner&quot;">
+          <type href="../../../../../../model/smartContract.ecore#//NamedElement/name"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_dAP-MNUNEeilyZJ8bjCcOw">
+        <type href="../../../../../../model/smartContract.ecore#//Field"/>
+        <attributes xmi:id="_foSXcdUNEeilyZJ8bjCcOw" value="&quot;highestPrice&quot;">
+          <type href="../../../../../../model/smartContract.ecore#//NamedElement/name"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_d4U1sdUNEeilyZJ8bjCcOw">
+        <type href="../../../../../../model/smartContract.ecore#//Field"/>
+        <attributes xmi:id="_2nUfAdUNEeilyZJ8bjCcOw" value="&quot;BiddingStopTime&quot;">
+          <type href="../../../../../../model/smartContract.ecore#//NamedElement/name"/>
+        </attributes>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_7WI0AtUMEeilyZJ8bjCcOw" origin="_7WI0ANUMEeilyZJ8bjCcOw" image="_7WI0AdUMEeilyZJ8bjCcOw"/>
+    <mappings xmi:id="_dAP-MdUNEeilyZJ8bjCcOw" origin="_dAGNMNUNEeilyZJ8bjCcOw" image="_dAP-MNUNEeilyZJ8bjCcOw"/>
+    <mappings xmi:id="_d4U1stUNEeilyZJ8bjCcOw" origin="_d4U1sNUNEeilyZJ8bjCcOw" image="_d4U1sdUNEeilyZJ8bjCcOw"/>
+  </units>
+</henshin:Module>

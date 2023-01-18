@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scs:TypeLib
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:scs="http://www.ustb.edu.cn/sei/mde/SmartContractSpecification"
+    xsi:schemaLocation="http://www.ustb.edu.cn/sei/mde/SmartContractSpecification smartContract.ecore">
+  <types xsi:type="scs:PrimitiveType"
+      name="Integer"
+      instanceType="uint"/>
+  <types xsi:type="scs:PrimitiveType"
+      name="Boolean"
+      instanceType="bool"/>
+  <types xsi:type="scs:PrimitiveType"
+      name="String"
+      instanceType="bytes32"/>
+  <types xsi:type="scs:PrimitiveType"
+      name="Name"
+      instanceType="bytes32"/>
+  <types xsi:type="scs:PrimitiveType"
+      name="Age"
+      instanceType="uint"/>
+  <types xsi:type="scs:PrimitiveType"
+      name="Gender"
+      instanceType="bool"/>
+  <types xsi:type="scs:PrimitiveType"
+      name="Date"
+      instanceType="uint"/>
+  <types xsi:type="scs:PrimitiveType"
+      name="Money"
+      instanceType="uint"/>
+  <types xsi:type="scs:PrimitiveType"
+      name="Signature"
+      instanceType="void"/>
+  <types xsi:type="scs:PrimitiveType"
+      name="Assignment"
+      instanceType="void"/>
+  <types xsi:type="scs:PrimitiveType"
+      name="Float"
+      instanceType="float"/>
+  <types xsi:type="scs:PrimitiveType"
+      name="Right"
+      instanceType="bytes32"/>
+</scs:TypeLib>

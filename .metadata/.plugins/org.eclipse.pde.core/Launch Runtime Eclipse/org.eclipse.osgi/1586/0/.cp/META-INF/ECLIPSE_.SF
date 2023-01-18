@@ -1,0 +1,181 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest: FcLzOwZG2/m3NigHCbWzkmZYjc0=
+Created-By: 1.6.0 (IBM Corporation)
+SHA1-Digest-Manifest-Main-Attributes: PnTUNL+9V5hnOxuInsdCMLFw6d0=
+
+Name: about.ini
+SHA1-Digest: NYedeHY9zXGgEENOplPfvuZGb9E=
+
+Name: src/org/eclipse/swtbot/eclipse/ui/project/_MANIFEST.MF
+SHA1-Digest: jHkRmiTEM3fS1cymv1xlIy4I738=
+
+Name: org/eclipse/swtbot/eclipse/ui/launcher/SWTBotJUnitTabGroup.class
+SHA1-Digest: kfir4dPbRw6ouiNnlmxTPoJoigY=
+
+Name: src/org/eclipse/swtbot/eclipse/ui/launcher/SWTBotLaunchShortcut.
+ java
+SHA1-Digest: VJKdKHlU8s9Bk6nzORYeBNN2W6w=
+
+Name: org/eclipse/swtbot/eclipse/ui/preferences/PreferenceInitializer.
+ class
+SHA1-Digest: OFP4dX7QbIVQ3t5yE4JoQr+1gao=
+
+Name: org/eclipse/swtbot/eclipse/ui/project/_build.properties
+SHA1-Digest: 6cZUhFRydOVDLqZuln3orkUtE+E=
+
+Name: org/eclipse/swtbot/eclipse/ui/project/Templatizer.class
+SHA1-Digest: HDIVq47GGbb42HWuJMKvSSTRZu4=
+
+Name: src/org/eclipse/swtbot/eclipse/ui/Activator.java
+SHA1-Digest: 6aHKoEmp+KDkw96Wqy07vzppLGA=
+
+Name: src/org/eclipse/swtbot/eclipse/ui/SWTBotLaunchConfigurationDeleg
+ ate.java
+SHA1-Digest: K8pQXYOQqS0ho4y6q2qJli0x75Q=
+
+Name: org/eclipse/swtbot/eclipse/ui/wizards/NewSWTBotTestPluginWizard.
+ class
+SHA1-Digest: GYlZRcAJOBjkjfQ92VUJXXXxr4k=
+
+Name: org/eclipse/swtbot/eclipse/ui/wizards/NewPluginProjectWizardPage
+ .class
+SHA1-Digest: SFDzli739gjOgGdexNLr6QJoaUI=
+
+Name: org/eclipse/swtbot/eclipse/ui/wizards/LaunchConfigPropertiesWiza
+ rdPage.class
+SHA1-Digest: B74zwfTfIxE/sOlALG+Hmdg40y4=
+
+Name: org/eclipse/swtbot/eclipse/ui/project/_classpath
+SHA1-Digest: i4sbLp0u0UXmcTgntPZ/fMg3uu8=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: QdryQvJlVywlE0MGLuwYCkmkyWk=
+
+Name: src/org/eclipse/swtbot/eclipse/ui/launcher/SWTBotJUnitTabGroup.j
+ ava
+SHA1-Digest: CCL0OCEgBWMNY7NT4vlBimJO0Qg=
+
+Name: org/eclipse/swtbot/eclipse/ui/wizards/NewPluginProjectWizardPage
+ $1.class
+SHA1-Digest: Mzs2/JiPlQNtH1wWkhfqNxkSJTk=
+
+Name: org/eclipse/swtbot/eclipse/ui/SWTBotLaunchConfigurationDelegate.
+ class
+SHA1-Digest: fu0D8nT9T6K5BBtvMR5itp5KDD4=
+
+Name: src/org/eclipse/swtbot/eclipse/ui/wizards/LaunchConfigProperties
+ WizardPage.java
+SHA1-Digest: LlZ6iNBhmUw7+LixNnnuRkYWpkg=
+
+Name: org/eclipse/swtbot/eclipse/ui/wizards/NewPluginProjectWizardPage
+ $3.class
+SHA1-Digest: uBWnz+Ei7B6GNUmO2wzbXY9qadQ=
+
+Name: src/org/eclipse/swtbot/eclipse/ui/wizards/NewPluginProjectWizard
+ Page.java
+SHA1-Digest: aPRPPfeDU2kLkXsz0uQFlEqa7wA=
+
+Name: org/eclipse/swtbot/eclipse/ui/preferences/SWTBotPreferencePage.c
+ lass
+SHA1-Digest: q5nhYOsVCEefq7l3/5YMlwlw6f8=
+
+Name: org/eclipse/swtbot/eclipse/ui/Activator.class
+SHA1-Digest: KqMDFLyK3tSxH5jt+NLGGj3HWMg=
+
+Name: about.properties
+SHA1-Digest: TUd1iwGyIaIDFcjRBt7K/+OozvQ=
+
+Name: LICENSE.EPL
+SHA1-Digest: tSkuewD1TraGvJEKnzt+VI+K2aY=
+
+Name: src/org/eclipse/swtbot/eclipse/ui/project/Templatizer.java
+SHA1-Digest: VPRTB/PzcA3oYtOBkphQ8Q4tvQM=
+
+Name: icons/swtbot_runner.png
+SHA1-Digest: LF4vxwjrOgzEYdqhF6/TSM0VrXA=
+
+Name: src/org/eclipse/swtbot/eclipse/ui/preferences/SWTBotPreferencePa
+ ge.java
+SHA1-Digest: dK1twOJCjcYi2cIWHYglbhnwPF0=
+
+Name: org/eclipse/swtbot/eclipse/ui/project/ProjectCreator.class
+SHA1-Digest: 2rTAhbzCuVnVTsQZMfb2ZGyQzw8=
+
+Name: intro/css/tutorial.css
+SHA1-Digest: ZKVKoZ4cBg8mWTpUZisZ0OfrkuI=
+
+Name: src/org/eclipse/swtbot/eclipse/ui/wizards/NewSWTBotTestPluginWiz
+ ard.java
+SHA1-Digest: psoadwKZDW1OaG5gf3/yDfmVGSE=
+
+Name: feature.gif
+SHA1-Digest: d5fTtBWLXCZPRszDCRfETDftNoU=
+
+Name: src/org/eclipse/swtbot/eclipse/ui/project/ProjectCreator.java
+SHA1-Digest: Sx3+XFcF1EP6niLvzfHn/kT/RFE=
+
+Name: org/eclipse/swtbot/eclipse/ui/wizards/ProjectSettingValidator.cl
+ ass
+SHA1-Digest: yh+xSZ88FwlknohlqYOagcXML7k=
+
+Name: src/org/eclipse/swtbot/eclipse/ui/wizards/WizardPageSettings.jav
+ a
+SHA1-Digest: Zk0Gg3dPPOR9WeEPMundS+L6lKU=
+
+Name: src/org/eclipse/swtbot/eclipse/ui/wizards/ProjectSettingValidato
+ r.java
+SHA1-Digest: OEtUajtflRtkBJYJ3zGJVfUxq/k=
+
+Name: src/org/eclipse/swtbot/eclipse/ui/preferences/PreferenceInitiali
+ zer.java
+SHA1-Digest: zcgxx7meLMW9XM24VrPExTF8ACM=
+
+Name: org/eclipse/swtbot/eclipse/ui/wizards/WizardPageSettings.class
+SHA1-Digest: iW6fV57ooEb6K4F8IiC+jKzF0Xk=
+
+Name: plugin.xml
+SHA1-Digest: EsTZmYi3B0PMA3rEAJNeprUWEso=
+
+Name: org/eclipse/swtbot/eclipse/ui/project/_project
+SHA1-Digest: gcxGIVIrUMTmhF4j7E5UPWi8vAg=
+
+Name: src/org/eclipse/swtbot/eclipse/ui/project/_build.properties
+SHA1-Digest: bvoIKZT/L2iKYxNOlp+7XNEWaN0=
+
+Name: intro/css/graphics/icon.gif
+SHA1-Digest: E6SzCw0gMX9moTBGyn18kr7NAlI=
+
+Name: src/org/eclipse/swtbot/eclipse/ui/project/_project
+SHA1-Digest: j8OkKE+sOI2TwhsAggSSYwv9dME=
+
+Name: about.html
+SHA1-Digest: a0Vxf+gEffwaALpdjhuSqBOMzIY=
+
+Name: org/eclipse/swtbot/eclipse/ui/wizards/NewPluginProjectWizardPage
+ $2.class
+SHA1-Digest: RKkBRDDKoUcaSmdR9mC0MOgTKw0=
+
+Name: src/org/eclipse/swtbot/eclipse/ui/project/_classpath
+SHA1-Digest: p4TT5stJnQ6QpNNqQQJ1Rtw20cg=
+
+Name: META-INF/maven/org.eclipse.swtbot.plugins/org.eclipse.swtbot.ecl
+ ipse.ui/pom.xml
+SHA1-Digest: dMCdzRNUFrkysABk2XBJ+o7H65A=
+
+Name: intro/css/graphics/icon_hov.gif
+SHA1-Digest: +Xo/o+/AbKVFNy44OnjFzT+nRKE=
+
+Name: intro/tutorialsExtensionContent.xml
+SHA1-Digest: hgmORR3R9zZnpiNKTYeBAtWJUNk=
+
+Name: org/eclipse/swtbot/eclipse/ui/launcher/SWTBotLaunchShortcut.clas
+ s
+SHA1-Digest: awR54zAQLHnlFCJObFfE5NTqUYw=
+
+Name: META-INF/maven/org.eclipse.swtbot.plugins/org.eclipse.swtbot.ecl
+ ipse.ui/pom.properties
+SHA1-Digest: DLUjvogcBkEc8b7no7KzYRlzS5c=
+
+Name: org/eclipse/swtbot/eclipse/ui/project/_MANIFEST.MF
+SHA1-Digest: 4BJorv6aDpBp/J3mzNGgCP/LYLM=
+
