@@ -17,7 +17,7 @@ SPESC 其余部分生成目标语言主体子合约之间的对应关系；其�
 ## 2.项目运行
 * 环境最好使用windows，java 8，因为需要使用Eclipse而Mac版本下的可能出现问题。
 * 推荐用Eclipse IDE for Java and DSL Developers。
-* 安装Xtext插件（关于插件的安装和介绍可以学习网上的资料，例如https://zhuanlan.zhihu.com/p/33047136）。
+* 安装Xtext插件（关于插件的安装和介绍可以学习网上的资料，例如https://zhuanlan.zhihu.com/p/33047136）
 * 使用Eclipse打开遍可以运行本项目。
 * 推荐在上手前，先学习xtext的官方相关资料（https://www.eclipse.org/Xtext/）
-* 由于国内资料可能比较少，可以在外网多渠道学习dsl和xtext的相关知识和语法。
+* 由于国内资料可能比较少，可在外网多渠道学习dsl和xtext的相关知识和语法，然后并且通过本实验室已发表的论文进一步理解和使用SPESC。
