@@ -18,8 +18,6 @@
 
 In our experiment, computer and non-computer personnel were invited to read Solidity and SPESC smart contracts in groups and answer questionnaires. The results showed that reading SPESC was about twice as fast as reading Solidity, and the accuracy rate was also higher. 
 
-Then, taking the bidding contract as an example, it gives the conversion from SPESC contract to executable Solidity contract language program according to the above conversion rules, and verifies the correctness of the conversion process through the deployment and operation of the Ethereum private chain. Our examples show that the above transformation rules and system framework can simplify the writing of smart contracts, standardize the program structure of smart contracts, and assist programmers to verify the correctness of codes. 
-
   
 ## Start for SPESC-to-Solidity
 * The environment is best to use windows, java 8, because you need to use Eclipse and there may be problems under the Mac version.
