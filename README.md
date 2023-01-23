@@ -16,7 +16,7 @@
 
 3)	Furthermore, the legibility and conversion correctness of the above-mentioned advanced smart contract framework are verified through two experiments. 
 
-In our experiment, computer and non-computer personnel were invited to read Solidity and SPESC smart contracts in groups and answer questionnaires. The results showed that reading SPESC was about twice as fast as reading Solidity, and the accuracy rate was also higher. 
+In our experiment, both computer and non-computer personnel were invited to read Solidity and SPESC smart contracts in groups and answer questionnaires. The results showed that reading SPESC was about twice as fast as reading Solidity, and the accuracy rate was also higher. 
 
   
 ## Start for SPESC-to-Solidity
