@@ -3,7 +3,7 @@
 
 * domain-specific language on Legal contract
 
-## 1.Why SPESC
+## 1.Why SPESC Language?
   Smart contracts are digital protocols that run on the blockchain. In recent years, the development of Smart Legal Contracts, as a kind of Law-DSLs, involves many fields such as computers, finance, and law. 
   
   In 2018, the SPESC language (http://smartlegalcontract.cn), as an Advanced Smart Contract Language (ASCL) or Smart Legal Contract Language (SLCL), have been proposed to solve the difficulties of reading, communicating and collaborative development for people in different fields by University of Science and Technology, Beijing (http://crypto.ustb.edu.cn). 
