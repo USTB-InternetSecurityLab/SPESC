@@ -1,7 +1,7 @@
 # SPESC Language —— Smart Legal Contract Language
-* specific smart contract on Law 
+* Specific Smart Contract on Law 
 
-* domain-specific language on Legal contract (Law-DSL)
+* Domain-Specific Language on Legal contract (Law-DSL)
 
 ## Why SPESC Language?
   Smart contracts are digital protocols that run on the blockchain. In recent years, the development of Smart Legal Contracts, as a kind of Law-DSLs, involves many fields such as computers, finance, and law. 
