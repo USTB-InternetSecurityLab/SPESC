@@ -30,7 +30,7 @@ Then, taking the bidding contract as an example, it gives the conversion from SP
 * Due to the lack of domestic materials, you can learn the relevant knowledge and grammar of dsl and xtext from multiple channels on the Internet, and then further understand and use SPESC through the published papers of this laboratory.
 
 ## Reference
-[1] SPESC: A Specification Language for Smart Contracts. https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8377649
+[1] SPESC: A Specification Language for Smart Contracts. https://ieeexplore.ieee.org/document/8377649/
 
 [2] SPESC-Translator: Towards Automatically Smart Legal Contract Conversion for Blockchain-based Auction Services. https://ieeexplore.ieee.org/document/9423670
 
