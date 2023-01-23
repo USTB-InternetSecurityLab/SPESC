@@ -3,7 +3,7 @@
 
 * domain-specific language on Legal contract
 
-## 1.Why SPESC Language?
+## Why SPESC Language?
   Smart contracts are digital protocols that run on the blockchain. In recent years, the development of Smart Legal Contracts, as a kind of Law-DSLs, involves many fields such as computers, finance, and law. 
   
   In 2018, the SPESC language (http://smartlegalcontract.cn), as an Advanced Smart Contract Language (ASCL) or Smart Legal Contract Language (SLCL), have been proposed to solve the difficulties of reading, communicating and collaborative development for people in different fields by University of Science and Technology, Beijing (http://crypto.ustb.edu.cn). 
@@ -21,7 +21,7 @@ In our experiment, computer and non-computer personnel were invited to read Soli
 Then, taking the bidding contract as an example, it gives the conversion from SPESC contract to executable Solidity contract language program according to the above conversion rules, and verifies the correctness of the conversion process through the deployment and operation of the Ethereum private chain. Our examples show that the above transformation rules and system framework can simplify the writing of smart contracts, standardize the program structure of smart contracts, and assist programmers to verify the correctness of codes. 
 
   
-## 2.start
+## Start for SPESC-to-Solidity
 * The environment is best to use windows, java 8, because you need to use Eclipse and there may be problems under the Mac version.
 * Eclipse IDE for Java and DSL Developers is recommended.
 * Install the Xtext plug-in (you can learn online information about the installation and introduction of the plug-in, such as https://zhuanlan.zhihu.com/p/33047136)
