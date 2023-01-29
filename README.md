@@ -27,6 +27,12 @@ In our experiment, both computer and non-computer personnel were invited to read
 * It is recommended to learn the official relevant information of xtext before getting started (https://www.eclipse.org/Xtext/)
 * Due to the lack of domestic materials, you can learn the relevant knowledge and grammar of dsl and xtext from multiple channels on the Internet, and then further understand and use SPESC through the published papers of this laboratory.
 
+## Authors and major contributors
+
+* [Yan Zhu](https://orcid.org/0000-0002-9159-745X) One of the initiators of SPESC and participated in the development of grammar.
+* [Bohan Qin](https://orcid.org/0000-0003-0413-1182) SPESC project construction, syntax definition, and syntax conversion rule code.
+* [Xiao He](http://faculty.ustb.edu.cn/XiaoHe/zh_CN/index.htm) Lay the foundation for SPESC grammar rule formulation and syntax completeness, supporting formal verification.
+
 ## Reference
 [1] SPESC: A Specification Language for Smart Contracts. https://ieeexplore.ieee.org/document/8377649/
 
