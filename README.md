@@ -32,7 +32,7 @@ In our experiment, both computer and non-computer personnel were invited to read
 * [Yan Zhu](http://scce.ustb.edu.cn/shiziduiwu/jiaoshixinxi/2018-04-12/66.html) One of the initiators of SPESC and participated in the development of grammar.
 * [Bohan Qin](https://orcid.org/0000-0003-0413-1182) SPESC project construction, syntax definition, and syntax conversion rule code.
 * [Xiao He](http://faculty.ustb.edu.cn/XiaoHe/zh_CN/index.htm) Lay the foundation for SPESC grammar rule formulation and syntax completeness, supporting formal verification.
-* [Lab 202](https://github.com/USTB-InternetSecurityLab),Contribute to SPESC open source.
+* [USTB 202](https://github.com/USTB-InternetSecurityLab),Contribute to SPESC open source.
 
 ## Reference
 [1] SPESC: A Specification Language for Smart Contracts. https://ieeexplore.ieee.org/document/8377649/
